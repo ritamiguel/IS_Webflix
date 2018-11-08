@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da7a28e9-21f7-4639-9053-4969c0b31edb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/.classpath" afterPath="$PROJECT_DIR$/project2-code-business/.classpath" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/project2-code-business/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/.settings/org.hibernate.eclipse.console.prefs" afterPath="$PROJECT_DIR$/project2-code-business/.settings/org.hibernate.eclipse.console.prefs" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" afterPath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" afterPath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBLogin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBLoginRemote.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBRemote.java" afterPath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBRemote.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/META-INF/maven/IS/project2-code-business/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/META-INF/maven/IS/project2-code-business/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/META-INF/maven/play/jpa/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/META-INF/maven/play/jpa/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/AuthenticationFailureException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/CarDTO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/MailerBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/ReceiveCars.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/TimerBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/UserBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/UserBeanInterface.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" afterPath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/.classpath" afterPath="$PROJECT_DIR$/project2-code-data/.classpath" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/.settings/org.hibernate.eclipse.console.prefs" afterPath="$PROJECT_DIR$/project2-code-data/.settings/org.hibernate.eclipse.console.prefs" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" afterPath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Content.java" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Content.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Episode.java" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Episode.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Movie.java" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/Movie.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/TVShow.java" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/TVShow.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/maven/IS/project2-code-data/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/maven/IS/project2-code-data/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/persistence.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/Car.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/User.class" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/User.class" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" afterPath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/.settings/org.eclipse.wst.common.component" afterPath="$PROJECT_DIR$/project2-code-ear/.settings/org.eclipse.wst.common.component" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" afterPath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/application.xml" afterPath="$PROJECT_DIR$/project2-code-ear/target/application.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/project2-code-ear/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/META-INF/application.xml" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/META-INF/application.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/.classpath" afterPath="$PROJECT_DIR$/project2-code-web/.classpath" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/project2-code-web/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/pom.xml" afterPath="$PROJECT_DIR$/project2-code-web/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" afterPath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java" afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/struts2-core-2.5.18.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/actions.css" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/actions.css" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/bootstrap-select.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/footer.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/footer.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/header.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/header.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/home.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/home.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/js/actions.js" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/js/actions.js" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/managerMenu.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/managerMenu.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/navbar.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/navbar.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/userMenu.jsp" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/userMenu.jsp" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/Register.class" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/Register.class" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/m2e-wtp/web-resources/META-INF/maven/IS/project2-code-web/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/m2e-wtp/web-resources/META-INF/maven/IS/project2-code-web/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/CarDealerServlet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/test-classes/org/projeto2/web/AppTest.class" afterPath="$PROJECT_DIR$/project2-code-web/target/test-classes/org/projeto2/web/AppTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/project2-code-ear/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-business/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-web/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-data/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="33" column="122" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAddMovie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserAddMovie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="111" column="37" lean-forward="false" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserEJB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+              <folding>
+                <element signature="method#login#0;class#UserEJB#0" expanded="false" />
+                <element signature="method#createAccount#0;class#UserEJB#0" expanded="false" />
+                <element signature="method#recognizeUser#0;class#UserEJB#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/Bean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserEJBRemote.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBRemote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Content.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Content.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/navbar.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/webflix.css" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/button.css" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/actions.css" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/bootstrap-select.css" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/userMenu.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/managerMenu.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBLogin.java" />
+        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBRemote.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Login.java" />
+        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java" />
+        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserAddMovie.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/header.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Java</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ejb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rita\Documents\Mestrado ES - FCTUC\1º ano\1º Semestre\IS\project2-code-parent\project2-code-web\src\main\webapp\css" />
+      <recent name="C:\Users\Rita\Documents\Mestrado ES - FCTUC\1º ano\1º Semestre\IS\project2-code-parent\project2-code-web\src\main\java\servlet" />
+      <recent name="C:\Users\Rita\Documents\Mestrado ES - FCTUC\1º ano\1º Semestre\IS\project2-code-parent\project2-code-business\src\main\java\ejb" />
+      <recent name="C:\Users\Rita\Documents\Mestrado ES - FCTUC\1º ano\1º Semestre\IS\project2-code-parent\project2-code-web\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="project2-code-parent" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="wildfly:deploy" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da7a28e9-21f7-4639-9053-4969c0b31edb" name="Default" comment="" />
+      <created>1541432078630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541432078630</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42541435" sideWeight="0.3734375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31049722" sideWeight="0.6265625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="e#1049#1050#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1129#1130#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1227#1228#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1326#1327#0" expanded="false" />
+            <element signature="e#1358#1359#0" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1429#1430#0" expanded="false" />
+            <element signature="e#1464#1465#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="100" lean-forward="false" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="e#1049#1050#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1129#1130#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1227#1228#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1326#1327#0" expanded="false" />
+            <element signature="e#1358#1359#0" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1429#1430#0" expanded="false" />
+            <element signature="e#1464#1465#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="e#1049#1050#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1129#1130#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1227#1228#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1326#1327#0" expanded="false" />
+            <element signature="e#1358#1359#0" expanded="false" />
+            <element signature="e#1382#1383#0" expanded="false" />
+            <element signature="e#1429#1430#0" expanded="false" />
+            <element signature="e#1464#1465#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/navbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/webflix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/actions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/bootstrap-select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="268" column="16" lean-forward="false" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="119" column="41" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/userMenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/managerMenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="143" column="6" lean-forward="false" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBLoginRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Logout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#202#203#0" expanded="false" />
+            <element signature="e#247#248#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/TVShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJBRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="33" column="122" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+          <folding>
+            <element signature="method#login#0;class#UserEJB#0" expanded="false" />
+            <element signature="method#createAccount#0;class#UserEJB#0" expanded="false" />
+            <element signature="method#recognizeUser#0;class#UserEJB#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserAddMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="111" column="37" lean-forward="false" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10v</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>project2-code-ear</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10v</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

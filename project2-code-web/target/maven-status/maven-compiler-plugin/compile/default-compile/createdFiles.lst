@@ -1,0 +1,4 @@
+servlet\Login.class
+servlet\Register.class
+servlet\Logout.class
+servlet\UserAddMovie.class
