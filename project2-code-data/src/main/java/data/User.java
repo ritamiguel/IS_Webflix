@@ -22,7 +22,7 @@ public class User implements Serializable {
 	private int creditcard;
 	private int isManager;
 
-	@OneToMany
+	@ManyToMany
 	private List<Content> watchlist;
 
 
@@ -90,12 +90,9 @@ public class User implements Serializable {
 		this.creditcard = creditcard;
 	}
 
-
-
-	public int isManager() {
+	public int getIsManager() {
 		return isManager;
 	}
-
 
 	public void setManager(int isManager) {
 		this.isManager = isManager;

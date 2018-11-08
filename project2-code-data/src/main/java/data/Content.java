@@ -18,7 +18,7 @@ private static final long serialVersionUID = 1L;
 	private int year;
 	private String category;
 	
-	@OneToMany
+	@ManyToMany(mappedBy = "watchList")
 	private List <User> subscribers;
 	
 	

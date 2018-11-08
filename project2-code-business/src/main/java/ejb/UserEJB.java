@@ -125,7 +125,7 @@ public class UserEJB implements UserEJBRemote {
     public ArrayList watchList(){
         try {
             Query newQuery = em.createQuery("select title, director, year, category from content");
-
+            newQuery.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();
         }

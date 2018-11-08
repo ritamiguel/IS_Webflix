@@ -122,8 +122,8 @@
                     <div class="row register-form">
                         <div class="col-md-10">
                             <div class="list-group">
-                                <a href="#" class="list-group-item active text-center" id="new_content">
-                                    <h4 class="glyphicon glyphicon-plus"></h4> <br/>Add	new	content to the application
+                                <a href="managerAddContent.jsp" class="list-group-item active text-center" id="new_content">
+                                <h4 class="glyphicon glyphicon-plus"></h4> <br/>Add	new	content to the application
                                 </a>
                                 <a href="#" class="list-group-item text-center" id="edit_multi">
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Edit the multimedia content

@@ -29,7 +29,7 @@ public class ManagerEJB implements ManagerEJBRemote {
     }
 
     //add content to table of contents
-    public void addContent(ContentDTO content, UserDTO user){
+    public void addContent(ContentDTO content){
         try {
             Query newQuery = em.createQuery("insert into content (title,director,year,category) values (?1,?2,?3,?4) ");
             newQuery.setParameter(1, content.getTitle());
@@ -40,6 +40,11 @@ public class ManagerEJB implements ManagerEJBRemote {
         } catch(Exception e){
             e.printStackTrace();
         }
+    }
+
+    //Edit the multimedia content
+    public void editContent(ContentDTO content){
+
     }
 
 }

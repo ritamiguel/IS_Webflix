@@ -1,11 +1,16 @@
 package data;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.List;
 import java.util.Date;
 
+@Entity
 public class TVShow extends Content {
 	
 	private static final long serialVersionUID = 1L;
+
+	@OneToMany
 	private List<Episode> episodes; // seasons/ep
 
 	public TVShow(String title, String director, int year, String category) {
