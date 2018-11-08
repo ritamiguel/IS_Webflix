@@ -15,7 +15,9 @@
                 <form action="managerMenu.jsp">
                 <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
                 </form>
-                <button class="btn btn-lg btn-primary btn-block" type="submit" >Log Out</button><br/>
+                <a href="logout" id="logout">
+                    <h4 class="glyphicon glyphicon-edit"></h4> <br/>Logout
+                </a>
             </div>
             <div class="col-md-9 register-right">
                 <h3 class="register-heading">Insert here name</h3>
@@ -23,6 +25,11 @@
                     <div class="col-md-6">
                             <form class="form-signing" action="addContent" method="post">
                                     <div class="form-group">
+                                    <select class="custom-select" id="option" name="option">
+                                        <option selected>Choose...</option>
+                                         <option value="1">Movie</option>
+                                         <option value="2">Serie</option>
+                                         </select>
                                         <label for="title" class="sr-only">Title</label>
                                         <input class="form-control" id="title" type="text" name="title" placeholder="Title"required>
                                          <div class="form-group">

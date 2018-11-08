@@ -1,6 +1,7 @@
 data\Movie.class
 data\TVShow.class
 data\User.class
+dto\EpisodeDTO.class
 dto\UserDTO.class
 data\Episode.class
 dto\ContentDTO.class

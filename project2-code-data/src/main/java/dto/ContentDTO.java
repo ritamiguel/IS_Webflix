@@ -17,14 +17,16 @@ public class ContentDTO implements Serializable {
     private String category;
 
     private List <UserDTO> subscribers;
+    private List <EpisodeDTO> episodes; // seasons/ep
 
 
-    public ContentDTO(String title, String director, int year, String category) {
+    public ContentDTO(String title, String director, int year, String category, List<EpisodeDTO> episodes ) {
         super();
         this.title = title;
         this.director = director;
         this.year = year;
         this.category = category;
+        this.episodes = episodes;
     }
 
     public ContentDTO() {}
@@ -54,6 +56,24 @@ public class ContentDTO implements Serializable {
     public void setCategory(String category) {
         this.category = category;
     }
+
+    public List<UserDTO> getSubscribers() {
+        return subscribers;
+    }
+
+    public void setSubscribers(List<UserDTO> subscribers) {
+        this.subscribers = subscribers;
+    }
+
+    public List<EpisodeDTO> getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(List<EpisodeDTO> episodes) {
+        this.episodes = episodes;
+    }
+
+
 
 
 }

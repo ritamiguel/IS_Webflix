@@ -50,13 +50,14 @@ public class Login extends HttpServlet {
         if(user != null){
             session.setAttribute("id", user.getId());
             session.setAttribute("user", user);
-            if(user.getIsManager() == 0) {
-                response.sendRedirect(request.getContextPath() + "/userMenu.jsp");
-                session.setAttribute("isUserLoggedIn", true);
-            } else {
-                response.sendRedirect(request.getContextPath() + "/managerMenu.jsp");
-                session.setAttribute("isUserLoggedIn", true);
+            session.setAttribute("isManager", user.isManager());
+            if (user.isManager() == 0) {
+                response.sendRedirect(request.getContextPath()+"/userMenu.jsp");
             }
+            else {
+                response.sendRedirect(request.getContextPath()+"/managerMenu.jsp");
+            }
+            session.setAttribute("isUserLoggedIn", true);
 
         }else{
             response.sendRedirect(request.getContextPath()+"/home.jsp");

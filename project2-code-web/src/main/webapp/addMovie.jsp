@@ -15,6 +15,9 @@
                 <form action="userMenu.jsp">
                 <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
                 </form>
+                <a href="logout" id="logout">
+                    <h4 class="glyphicon glyphicon-edit"></h4> <br/>Logout
+                </a>
             </div>
             <div class="col-md-9 register-right">
                 <h3 class="register-heading">Insert here name</h3>

@@ -13,4 +13,6 @@ public interface UserEJBRemote {
     public User recognizeUser(String email, String password);
     public void addMovie(ContentDTO content, UserDTO user);
     public String updateUser(String option, String newAttribute, long id);
+    public ContentDTO searchByCategory(String category);
+    public void searchByDirector(String director);
 }

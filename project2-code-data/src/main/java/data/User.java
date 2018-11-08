@@ -90,9 +90,12 @@ public class User implements Serializable {
 		this.creditcard = creditcard;
 	}
 
-	public int getIsManager() {
+
+
+	public int isManager() {
 		return isManager;
 	}
+
 
 	public void setManager(int isManager) {
 		this.isManager = isManager;
@@ -114,6 +117,5 @@ public class User implements Serializable {
 		return "User [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", creditcard="
 				+ creditcard + "]";
 	}
-
 
 }

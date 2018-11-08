@@ -29,7 +29,7 @@ public class ManagerEJB implements ManagerEJBRemote {
     }
 
     //add content to table of contents
-    public void addContent(ContentDTO contentdto) {
+    public void addContent(ContentDTO contentdto, int option) {
         try {
             Query newQuery = em.createQuery("insert into Content (title,director,year,category) values (?1,?2,?3,?4) ");
             newQuery.setParameter(1, contentdto.getTitle());

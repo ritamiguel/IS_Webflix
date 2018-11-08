@@ -13,6 +13,10 @@
               <div class="col-md-3 register-left">
                   <img src="https://mbtskoudsalg.com/images/popcorn-png.png" alt=""/>
                   <h3>Webflix</h3>
+                  &nbsp;
+                  <a href="logout" id="logout">
+                      <h4 class="glyphicon glyphicon-edit"></h4> <br/>Logout
+                  </a>
               </div>
               <div class="col-md-9 register-right">
                     <div class="row register-form">

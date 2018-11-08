@@ -6,34 +6,35 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Content")
 public class Content implements Serializable {
-	
-private static final long serialVersionUID = 1L;
-	
+
+	private static final long serialVersionUID = 1L;
+
 	@Id @GeneratedValue
 	private long id;
 	private String title;
 	private String director;
 	private int year;
 	private String category;
-	
-	@ManyToMany(mappedBy = "watchlist")
+
+	@ManyToMany(mappedBy ="watchlist")
 	private List <User> subscribers;
 	@OneToMany
-	private List <Episode> episodes;
-	
-	
+	private List<Episode> episodes; // seasons/ep
+
+
+
 	public Content(String title, String director, int year, String category) {
 		super();
 		this.title = title;
 		this.director = director;
 		this.year = year;
 		this.category = category;
+		this.episodes = episodes;
 	}
-	
+
 	public Content() {}
-	
+
 
 	public String getTitle() {
 		return title;
@@ -67,4 +68,6 @@ private static final long serialVersionUID = 1L;
 	public void setEpisodes(List<Episode> episodes) {
 		this.episodes = episodes;
 	}
+
+
 }

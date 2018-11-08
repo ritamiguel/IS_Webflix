@@ -113,10 +113,34 @@ public class UserEJB implements UserEJBRemote {
         return "Error";
     }
 
+    public ContentDTO searchByCategory(String category){
+
+        try {
+            Query newQuery = em.createQuery("select category from Content where category = ?1");
+            newQuery.setParameter(1, category);
+            newQuery.executeUpdate();
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void searchByDirector(String director){
+
+        try {
+            Query newQuery = em.createQuery("select director from Content where director = ?1");
+            newQuery.setParameter(1, director);
+            newQuery.executeUpdate();
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
     //Imprimir watch list
     public ArrayList watchList(){
         try {
-            Query newQuery = em.createQuery("select title, director, year, category from content");
+            Query newQuery = em.createQuery("select * from content");
             newQuery.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();

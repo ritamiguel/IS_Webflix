@@ -1,11 +1,13 @@
 package servlet;
 
+import dto.EpisodeDTO;
 import ejb.UserEJBRemote;
 import dto.UserDTO;
 import dto.ContentDTO;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -47,9 +49,18 @@ public class UserAddMovie extends HttpServlet {
         String director = (String) request.getParameter("director");
         int year = Integer.parseInt(request.getParameter("year"));
         String category = (String) request.getParameter("category");
+        int option = Integer.parseInt(request.getParameter("option"));
 
+        ContentDTO contentDto = null;
+        if(option == 1)
+            contentDto = new ContentDTO(title, director, year, category, null);
+        else {
+            List<EpisodeDTO> episodes = null;
+            episodes.add(new EpisodeDTO(0, "exmaple"));
+            contentDto = new ContentDTO(title, director, year, category, episodes);
+
+        }
         UserDTO userDto = new UserDTO();
-        ContentDTO contentDto = new ContentDTO(title, director, year, category);
         userejb.addMovie(contentDto, userDto);
     }
 
