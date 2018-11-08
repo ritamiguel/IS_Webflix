@@ -10,5 +10,6 @@ import dto.ContentDTO;
 @Remote
 public interface ManagerEJBRemote {
     public void addContent(ContentDTO content);
-    public void editContent(ContentDTO content);
+    public String updateContent(String option, String newAttribute, String title);
+    public void deleteContent(ContentDTO contentdto);
 }

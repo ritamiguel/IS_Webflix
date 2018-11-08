@@ -1,6 +1,9 @@
+servlet\DeleteContent.class
 servlet\LoginFilter.class
 servlet\Logout.class
 servlet\ManagerAddContent.class
+servlet\UserWatchList.class
+servlet\EditContent.class
 servlet\EditUser.class
 servlet\Login.class
 servlet\Register.class

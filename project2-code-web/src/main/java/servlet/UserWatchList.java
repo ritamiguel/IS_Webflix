@@ -35,15 +35,9 @@ public class UserWatchList extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String title = (String) request.getParameter("title");
-        String director = (String) request.getParameter("director");
-        int year = Integer.parseInt(request.getParameter("year"));
-        String category = (String) request.getParameter("category");
-        
+        UserDTO user = new UserDTO();
 
-        UserDTO userDto = null;
-        ContentDTO contentDto = new ContentDTO(title, director, year, category);
-        userejb.addMovie(contentDto, userDto);
-
+        session.setAttribute("myWatchList", user.getWatchlist());
+        response.sendRedirect(request.getContextPath() + "/userWatchList.jsp");
     }
 }

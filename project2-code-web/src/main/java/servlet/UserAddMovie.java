@@ -48,11 +48,9 @@ public class UserAddMovie extends HttpServlet {
         int year = Integer.parseInt(request.getParameter("year"));
         String category = (String) request.getParameter("category");
 
-        UserDTO userDto = null;
+        UserDTO userDto = new UserDTO();
         ContentDTO contentDto = new ContentDTO(title, director, year, category);
         userejb.addMovie(contentDto, userDto);
-        request.getSession().setAttribute("log","New auction added successfully.");
-
     }
 
 

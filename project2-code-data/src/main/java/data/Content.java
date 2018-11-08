@@ -1,12 +1,12 @@
 package data;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "Content")
 public class Content implements Serializable {
 	
 private static final long serialVersionUID = 1L;
@@ -18,8 +18,10 @@ private static final long serialVersionUID = 1L;
 	private int year;
 	private String category;
 	
-	@ManyToMany(mappedBy = "watchList")
+	@ManyToMany(mappedBy = "watchlist")
 	private List <User> subscribers;
+	@OneToMany
+	private List <Episode> episodes;
 	
 	
 	public Content(String title, String director, int year, String category) {
@@ -58,5 +60,11 @@ private static final long serialVersionUID = 1L;
 		this.category = category;
 	}
 
-	
+	public List<Episode> getEpisodes() {
+		return episodes;
+	}
+
+	public void setEpisodes(List<Episode> episodes) {
+		this.episodes = episodes;
+	}
 }

@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 import dto.ContentDTO;
 import dto.UserDTO;
-
+import data.Content;
 import data.User;
 
 import java.util.ArrayList;
@@ -29,22 +29,64 @@ public class ManagerEJB implements ManagerEJBRemote {
     }
 
     //add content to table of contents
-    public void addContent(ContentDTO content){
+    public void addContent(ContentDTO contentdto) {
         try {
-            Query newQuery = em.createQuery("insert into content (title,director,year,category) values (?1,?2,?3,?4) ");
-            newQuery.setParameter(1, content.getTitle());
-            newQuery.setParameter(2, content.getDirector());
-            newQuery.setParameter(3, content.getYear());
-            newQuery.setParameter(4, content.getCategory());
+            Query newQuery = em.createQuery("insert into Content (title,director,year,category) values (?1,?2,?3,?4) ");
+            newQuery.setParameter(1, contentdto.getTitle());
+            newQuery.setParameter(2, contentdto.getDirector());
+            newQuery.setParameter(3, contentdto.getYear());
+            newQuery.setParameter(4, contentdto.getCategory());
             newQuery.executeUpdate();
         } catch(Exception e){
+            e.printStackTrace();
+        }
+        Content contentToPersist = new Content(contentdto.getTitle(), contentdto.getDirector(), contentdto.getYear(), contentdto.getCategory());
+        try{
+            em.persist(contentToPersist);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     //Edit the multimedia content
-    public void editContent(ContentDTO content){
+    public String updateContent(String option, String newAttribute, String title){
+        System.out.println(option);
+        Content contentToUpdate = (Content) em.find(Content.class, title);
 
+        if(contentToUpdate != null) {
+            int x = 0;
+            if ("Title".equals(option)) {
+                contentToUpdate.setTitle(newAttribute);
+
+            } else if ("Director".equals(option)) {
+                contentToUpdate.setDirector(newAttribute);
+
+            } else if ("Year".equals(option)) {
+                int year = Integer.parseInt(newAttribute);
+                contentToUpdate.setYear(year);
+
+            } else if ("password".equals(option)) {
+                contentToUpdate.setCategory(newAttribute);
+
+            } else {
+                x = 1;
+
+            }
+            if (x == 0)
+                return "Success";
+        }
+        return "Error";
     }
 
+
+    //Delete content
+    public void deleteContent(ContentDTO contentdto){
+        try {
+            Query newQuery = em.createQuery("delete from Content where title = ?1");
+            newQuery.setParameter(1, contentdto.getTitle());
+            newQuery.executeUpdate();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.persistence.*;
 
-public class ContentDTO {
+public class ContentDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

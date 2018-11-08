@@ -75,13 +75,6 @@ public class UserEJB implements UserEJBRemote {
             Query pickMovie = em.createQuery("select title from content where title = ?1");
             pickMovie.setParameter(1, content.getTitle());
             user.getWatchlist().add(content);
-
-            Query newQuery = em.createQuery("insert into content (title,director,year,category) values (?1,?2,?3,?4) ");
-            newQuery.setParameter(1, content.getTitle());
-            newQuery.setParameter(2, content.getDirector());
-            newQuery.setParameter(3, content.getYear());
-            newQuery.setParameter(4, content.getCategory());
-            newQuery.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();
         }
@@ -101,7 +94,6 @@ public class UserEJB implements UserEJBRemote {
 
             } else if ("email".equals(option)) {// verify email example@email.com format
                 userToUpdate.setEmail(newAttribute);
-
                 userToUpdate.setPassword(newAttribute);
 
             } else if ("password".equals(option)) {

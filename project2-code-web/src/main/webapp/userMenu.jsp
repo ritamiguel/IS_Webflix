@@ -11,7 +11,11 @@
           <div class="row">
               <div class="col-md-3 register-left">
                   <img src="https://mbtskoudsalg.com/images/popcorn-png.png" alt=""/>
-                  <h3>Webflix</h3>
+                  <h3>Welcome</h3>
+                  <p>to User Menu</p>
+                  <form action="home.jsp">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
+                   </form>
               </div>
               <div class="col-md-9 register-right">
                     <div class="row register-form">
@@ -21,7 +25,7 @@
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Search for all the content
                             </a> <a href="addMovie.jsp" class="list-group-item text-center" id="add_movie">
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Add a movie and/or episode to watch list
-                            </a> <a href="#" class="list-group-item text-center" id="watch_list">
+                            </a> <a href="userWatchList.jsp" class="list-group-item text-center" id="watch_list">
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Watch list
                             </a> <a href="#" class="list-group-item text-center" id="List_sug">
                                 <h4 class="glyphicon glyphicon-list-alt"></h4> <br/>List of suggested content

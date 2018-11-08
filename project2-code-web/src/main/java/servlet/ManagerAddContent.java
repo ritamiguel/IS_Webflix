@@ -42,7 +42,5 @@ public class ManagerAddContent extends HttpServlet {
 
         ContentDTO contentDto = new ContentDTO(title, director, year, category);
         managerejb.addContent(contentDto);
-        request.getSession().setAttribute("log","New auction added successfully.");
-
     }
 }

@@ -12,7 +12,11 @@
           <div class="row">
               <div class="col-md-3 register-left">
                   <img src="https://mbtskoudsalg.com/images/popcorn-png.png" alt=""/>
-                  <h3>Webflix</h3>
+                  <h3>Welcome</h3>
+                  <p>to Manager Menu</p>
+                  <form action="home.jsp">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
+                  </form>
               </div>
               <div class="col-md-9 register-right">
                     <div class="row register-form">
@@ -21,7 +25,7 @@
                                 <a href="managerAddContent.jsp" class="list-group-item active text-center" id="new_content">
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Add	new	content to the application
                                 </a>
-                                <a href="#" class="list-group-item text-center" id="edit_multi">
+                                <a href="editContent.jsp" class="list-group-item text-center" id="edit_multi">
                                 <h4 class="glyphicon glyphicon-plus"></h4> <br/>Edit the multimedia content
                             </a>
                             <a href="#" class="list-group-item text-center" id="del_content">

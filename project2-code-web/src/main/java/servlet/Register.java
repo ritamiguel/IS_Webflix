@@ -51,7 +51,7 @@ public class Register extends HttpServlet {
             session.setAttribute("error", result);
         }
         else{
-            response.sendRedirect(request.getContextPath()+"/register.jsp");
+            response.sendRedirect(request.getContextPath()+"/home.jsp");
             session.setAttribute("error", result);
             System.out.println("Error creating user");
         }

@@ -12,9 +12,10 @@
                 <img src="https://mbtskoudsalg.com/images/popcorn-png.png" alt=""/>
                 <h3>Add</h3>
                 <p>movie and/or TVShow</p>
-                <form action="userMenu.jsp">
+                <form action="managerMenu.jsp">
                 <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
                 </form>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" >Log Out</button><br/>
             </div>
             <div class="col-md-9 register-right">
                 <h3 class="register-heading">Insert here name</h3>
