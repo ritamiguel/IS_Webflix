@@ -39,10 +39,12 @@ public class Register extends HttpServlet {
         String lastName = (String) request.getParameter("lastName");
         String creditCardString = (String) request.getParameter("creditCard");
         int creditCard = Integer.parseInt(creditCardString);
+        String isManagerString = (String) request.getParameter("isManager");
+        int isManager = Integer.parseInt(isManagerString);
         session.removeAttribute("error");
         session.removeAttribute("success");
         System.out.println("CALLING CREATE USER: " + " firstName: " + firstName + " lastName: "+ lastName + "email: " + email + " password: " + password + "credit card: "+ creditCard );
-        String result = authEJB.createAccount(firstName, lastName, email, password, creditCard);
+        String result = authEJB.createAccount(firstName, lastName, email, password, creditCard, isManager);
 
         if(result.equals("Success")){
             response.sendRedirect(request.getContextPath()+"/login.jsp");

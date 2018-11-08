@@ -15,14 +15,14 @@ private static final long serialVersionUID = 1L;
 	private long id;
 	private String title;
 	private String director;
-	private Date year;
+	private int year;
 	private String category;
 	
 	@OneToMany
 	private List <User> subscribers;
 	
 	
-	public Content(String title, String director, Date year, String category) {
+	public Content(String title, String director, int year, String category) {
 		super();
 		this.title = title;
 		this.director = director;
@@ -45,10 +45,10 @@ private static final long serialVersionUID = 1L;
 	public void setDirector(String director) {
 		this.director = director;
 	}
-	public Date getYear() {
+	public int getYear() {
 		return year;
 	}
-	public void setYear(Date year) {
+	public void setYear(int year) {
 		this.year = year;
 	}
 	public String getCategory() {

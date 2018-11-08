@@ -155,6 +155,8 @@
                                             <label for="email" class="sr-only">Credit Card Number</label>
                                             <input class="form-control" id="creditCard" type="text" name="creditCard" placeholder="Credit Card" required autofocus>
                                             </div>
+                                            <input id="isManager" type="hidden" name="isManager" value="0">
+
                                             &nbsp;
                                             <form action="userMenu.jsp">
                                             <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button><br/>
@@ -195,6 +197,7 @@
                                             <label for="email" class="sr-only">Credit Card Number</label>
                                             <input class="form-control" id="creditCard" type="text" name="creditCard" placeholder="Credit Card" required autofocus>
                                             </div>
+                                            <input id="isManager" type="hidden" name="isManager" value="1">
                                             &nbsp;
                                         <form action="managerMenu.jsp">
                                         <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>

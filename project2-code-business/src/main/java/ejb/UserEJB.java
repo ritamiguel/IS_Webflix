@@ -4,6 +4,9 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.*;
 
+import dto.ContentDTO;
+import dto.UserDTO;
+
 import data.User;
 
 import java.util.ArrayList;
@@ -26,24 +29,7 @@ public class UserEJB implements UserEJBRemote {
     }
 
 
-    public String login(String email, String password){
-        try {
-            Query logQuery = em.createQuery("SELECT email, password FROM user WHERE email=? AND password=?");
-            User user = (User) logQuery.getSingleResult();
-            if(user.getEmail().equals(email) && user.getPassword().equals(password)) {
-                return "Sucess";
-            } else {
-                return "The email and/or password are incorrect";
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Error login.");
-            return "Error login";
-        }
-    }
-
-    public String createAccount(String firstName, String lastName, String email, String password, int creditcard)
+    public String createAccount(String firstName, String lastName, String email, String password, int creditcard, int isManager)
     {
         try {
             Query newQuery = em.createQuery("FROM User user where user.email=?1");
@@ -54,7 +40,7 @@ public class UserEJB implements UserEJBRemote {
             }
         } catch (NoResultException NRE) {
             try {
-                User newUser = new User(firstName,lastName, email, password, creditcard);
+                User newUser = new User(firstName,lastName, email, password, creditcard, isManager);
                 em.persist(newUser);
                 return "Success";
             } catch (Exception e) {
@@ -84,28 +70,65 @@ public class UserEJB implements UserEJBRemote {
     }
 
     //add movie or episode to watch list
-    public void addMovie(String title, String director, String year, String category){
-
+    public void addMovie(ContentDTO content, UserDTO user){
         try {
+            Query pickMovie = em.createQuery("select title from content where title = ?1");
+            pickMovie.setParameter(1, content.getTitle());
+            user.getWatchlist().add(content);
+
             Query newQuery = em.createQuery("insert into content (title,director,year,category) values (?1,?2,?3,?4) ");
-            newQuery.setParameter(1, title);
-            newQuery.setParameter(2, director);
-            newQuery.setParameter(3, year);
-            newQuery.setParameter(4, category);
+            newQuery.setParameter(1, content.getTitle());
+            newQuery.setParameter(2, content.getDirector());
+            newQuery.setParameter(3, content.getYear());
+            newQuery.setParameter(4, content.getCategory());
             newQuery.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();
         }
     }
 
+    public String updateUser(String option, String newAttribute, long id) {
+        System.out.println(option);
+        User userToUpdate = (User) em.find(User.class, id);
+
+        if(userToUpdate != null) {
+            int x = 0;
+            if ("First Name".equals(option)) {
+                userToUpdate.setFirstName(newAttribute);
+
+            } else if ("Last Name".equals(option)) {
+                userToUpdate.setLastName(newAttribute);
+
+            } else if ("email".equals(option)) {// verify email example@email.com format
+                userToUpdate.setEmail(newAttribute);
+
+                userToUpdate.setPassword(newAttribute);
+
+            } else if ("password".equals(option)) {
+                userToUpdate.setPassword(newAttribute);
+
+            } else if ("Credit Card".equals(option)) {// verify int
+                int ccnum = Integer.parseInt(newAttribute);
+                userToUpdate.setCreditcard(ccnum);
+
+            } else {
+                x = 1;
+
+            }
+            if (x == 0)
+                return "Success";
+        }
+        return "Error";
+    }
+
+    //Imprimir watch list
     public ArrayList watchList(){
-
-
         try {
             Query newQuery = em.createQuery("select title, director, year, category from content");
 
         } catch(Exception e){
             e.printStackTrace();
         }
+        return null;
     }
 }

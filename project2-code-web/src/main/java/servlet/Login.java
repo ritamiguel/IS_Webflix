@@ -24,22 +24,15 @@ public class Login extends HttpServlet {
      */
     public Login() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        request.getSession().removeAttribute("log");
-        if(request.getSession().getAttribute("user")==null) {
-            if (action.compareToIgnoreCase("login") == 0) {
-                request.getRequestDispatcher("login.jsp").forward(request, response);
-            } else {
-                request.getRequestDispatcher("userMenu.jsp").forward(request, response);
-            }
-        }
-
+        // TODO Auto-generated method stub
+        response.getWriter().append("Served at: ").append(request.getContextPath());
     }
 
     /**
@@ -55,11 +48,13 @@ public class Login extends HttpServlet {
         User user = authEJB.recognizeUser(email,password);
 
         if(user != null){
-            session.setAttribute("emailUser",user.getEmail());
+            session.setAttribute("id", user.getId());
             session.setAttribute("user", user);
-            request.getRequestDispatcher("userMenu.jsp").forward(request, response);
+            response.sendRedirect(request.getContextPath()+"/userMenu.jsp");
+            session.setAttribute("isUserLoggedIn", true);
+
         }else{
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            response.sendRedirect(request.getContextPath()+"/home.jsp");
             session.setAttribute("error", "Email or password incorrect");
         }
     }

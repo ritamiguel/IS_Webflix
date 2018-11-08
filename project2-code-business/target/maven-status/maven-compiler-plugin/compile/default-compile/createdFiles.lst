@@ -1,3 +1,5 @@
+ejb\ManagerEJB.class
+ejb\UserEJBRemote.class
 ejb\Bean.class
 ejb\UserEJB.class
-ejb\UserEJBRemote.class
+ejb\ManagerEJBRemote.class

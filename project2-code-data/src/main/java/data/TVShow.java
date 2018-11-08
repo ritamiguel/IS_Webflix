@@ -8,7 +8,7 @@ public class TVShow extends Content {
 	private static final long serialVersionUID = 1L;
 	private List<Episode> episodes; // seasons/ep
 
-	public TVShow(String title, String director, Date year, String category) {
+	public TVShow(String title, String director, int year, String category) {
 		super(title, director, year, category);
 	}
 
