@@ -34,12 +34,9 @@
                             <div class="input-group mb-3">
                                   <input type="text" class="form-control" placeholder="Content's title" aria-label="Content's title" aria-describedby="basic-addon2">
                                   <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">Delete content</button>
+                                  <button class="btn btn-lg btn-primary btn-block" type="submit"> Delete content</button>
                                   </div>
                                 </div>
-                            <button type="submit">
-                            <span>Delete Content</span>
-                            </button>
                           </form>
                          </div>
                     </div>

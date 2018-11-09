@@ -17,10 +17,10 @@
 			<property name="javax.persistence.jdbc.password"
 				value="rita" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/webflix?serverTimezone=SYSTEM&amp;useSSL=false"/>
+				value="jdbc:mysql://localhost:3306/webflix?serverTimezone=SYSTEM"/>
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQLDialect" />
-			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />			
 		</properties>
 

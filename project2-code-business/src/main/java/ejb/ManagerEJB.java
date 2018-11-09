@@ -31,11 +31,12 @@ public class ManagerEJB implements ManagerEJBRemote {
     //add content to table of contents
     public void addContent(ContentDTO contentdto, int option) {
         try {
-            Query newQuery = em.createQuery("insert into Content (title,director,year,category) values (?1,?2,?3,?4) ");
+            Query newQuery = em.createNativeQuery("insert into contents (title,director,year,category,id) values (?1,?2,?3,?4,?5) ");
             newQuery.setParameter(1, contentdto.getTitle());
             newQuery.setParameter(2, contentdto.getDirector());
             newQuery.setParameter(3, contentdto.getYear());
             newQuery.setParameter(4, contentdto.getCategory());
+            newQuery.setParameter(5, contentdto.getId());
             newQuery.executeUpdate();
         } catch(Exception e){
             e.printStackTrace();
@@ -82,7 +83,7 @@ public class ManagerEJB implements ManagerEJBRemote {
     //Delete content
     public void deleteContent(ContentDTO contentdto){
         try {
-            Query newQuery = em.createQuery("delete from Content where title = ?1");
+            Query newQuery = em.createQuery("delete from Contents where title = ?1");
             newQuery.setParameter(1, contentdto.getTitle());
             newQuery.executeUpdate();
         } catch(Exception e) {

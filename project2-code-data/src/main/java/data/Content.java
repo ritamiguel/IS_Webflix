@@ -6,11 +6,12 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "contents")
 public class Content implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Id @GeneratedValue
+	@Id @GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String title;
 	private String director;
@@ -59,6 +60,14 @@ public class Content implements Serializable {
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public List<Episode> getEpisodes() {

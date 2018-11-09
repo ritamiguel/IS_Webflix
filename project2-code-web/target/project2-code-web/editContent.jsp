@@ -21,12 +21,15 @@
                     <div class="row register-form">
                         <div class="col-md-10">
                             <form method="post" action="editContent">
-                                    <select name="option">
-                                       <option>Title</option>
-                                       <option>Director</option>
-                                       <option>Year</option>
-                                       <option>Category</option>
-                                   </select>
+                                   <div class="input-group mb-3">
+                                     <select class="custom-select" id="inputGroupSelect02">
+                                     <select name="option">
+                                       <option selected>Choose...</option>
+                                       <option value="1">Title</option>
+                                       <option value="2">Director</option>
+                                       <option value="3">Year</option>
+                                       <option value="4">Category</option>
+                                     </select>
                                    <label for="newAttribute" class="sr-only"> ENTER NEW </label>
                                    <input class="form-control" id="newAttribute" type="text" name="newAttribute" placeholder="ENTER NEW"required>
                                     <button class="btn btn-lg btn-primary btn-block" type="submit">OK</button>

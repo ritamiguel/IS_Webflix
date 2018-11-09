@@ -13,7 +13,7 @@
                   <img src="https://mbtskoudsalg.com/images/popcorn-png.png" alt=""/>
                   <h3>Welcome</h3>
                   <p>to User Menu</p>
-                  <form action="home.jsp">
+                  <form action="userMenu.jsp">
                   <button class="btn btn-lg btn-primary btn-block" type="submit" >Go Back</button><br/>
                    </form>
               </div>
