@@ -1,5 +1,5 @@
 ejb\ManagerEJB.class
 ejb\UserEJBRemote.class
-ejb\Bean.class
+security\BCrypt.class
 ejb\UserEJB.class
 ejb\ManagerEJBRemote.class

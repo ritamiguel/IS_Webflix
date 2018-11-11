@@ -1,15 +1,14 @@
 package ejb;
 
+import security.BCrypt;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.*;
-
 import dto.ContentDTO;
 import dto.UserDTO;
-
-import data.User;
-
+import data.*;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Session Bean implementation class UserEJB
@@ -29,6 +28,12 @@ public class UserEJB implements UserEJBRemote {
     }
 
 
+    public String hashPassword(String password)
+    {
+        String hashed =  BCrypt.hashpw(password,BCrypt.gensalt());
+        return hashed;
+    }
+    
     public String createAccount(String firstName, String lastName, String email, String password, int creditcard, int isManager)
     {
         try {
@@ -40,7 +45,8 @@ public class UserEJB implements UserEJBRemote {
             }
         } catch (NoResultException NRE) {
             try {
-                User newUser = new User(firstName,lastName, email, password, creditcard, isManager);
+                User newUser = new User(firstName,lastName, email, hashPassword(password), creditcard, isManager);
+                
                 em.persist(newUser);
                 return "Success";
             } catch (Exception e) {
@@ -55,12 +61,17 @@ public class UserEJB implements UserEJBRemote {
     // get user with email and password
     public User recognizeUser(String email, String password) {
         try{
-            Query newQuery = em.createQuery(" FROM User user where user.email=?1");
-            newQuery.setParameter(1, email);
-            User userToAuth = (User) newQuery.getSingleResult();
-            if(userToAuth != null)
-                return userToAuth;
-            
+
+	            Query newQuery = em.createQuery(" FROM User user where user.email=?1");
+	            newQuery.setParameter(1, email);
+	            User userToAuth = (User) newQuery.getSingleResult();
+	            if(userToAuth != null) 
+	            {
+	            	if(BCrypt.checkpw(password, userToAuth.getPassword()) == true) {
+	            		return userToAuth;
+	            	}
+	            }
+	                       
         }catch(Exception e)
         {
             e.printStackTrace();
@@ -69,14 +80,24 @@ public class UserEJB implements UserEJBRemote {
 
     }
 
-    //add movie or episode to watch list
-    public void addMovie(ContentDTO content, UserDTO user){
+  //add movie or episode to watch list
+    public String addMovie(String title, long id){
+        Content content = null;
+        User user = null;
         try {
-            Query pickMovie = em.createQuery("select title from content where title = ?1");
-            pickMovie.setParameter(1, content.getTitle());
+            Query pickMovie = em.createQuery("FROM Content t where t.title=?1");
+            pickMovie.setParameter(1, title);
+
+            user = em.find(User.class, id);
+
+            content = (Content) pickMovie.getSingleResult();
             user.getWatchlist().add(content);
-        } catch(Exception e){
+
+            return "Success";
+        } catch(NoResultException e){
             e.printStackTrace();
+            System.out.println("Error addMovie !");
+            return "Error adding a content to list!";
         }
     }
 
@@ -94,10 +115,10 @@ public class UserEJB implements UserEJBRemote {
 
             } else if ("email".equals(option)) {// verify email example@email.com format
                 userToUpdate.setEmail(newAttribute);
-                userToUpdate.setPassword(newAttribute);
+                userToUpdate.setPassword(hashPassword(newAttribute));
 
             } else if ("password".equals(option)) {
-                userToUpdate.setPassword(newAttribute);
+                userToUpdate.setPassword(hashPassword(newAttribute));
 
             } else if ("Credit Card".equals(option)) {// verify int
                 int ccnum = Integer.parseInt(newAttribute);
@@ -114,36 +135,27 @@ public class UserEJB implements UserEJBRemote {
     }
 
 
-    public ContentDTO searchByCategory(String category){
-        try {
-            Query newQuery = em.createQuery("select category from Content where category = ?1");
-            newQuery.setParameter(1, category);
-            newQuery.executeUpdate();
-        } catch(Exception e){
+  
+    //print watch list
+      public List<Content> watchList(long id){
+          User user = em.find(User.class, id);
+          List<Content> listu = user.getWatchlist();
+
+          return listu;
+      }
+
+    public String deleteAccount(long id)
+    {
+        try{
+            User user = em.find(User.class, id);
+            em.remove(user);
+            return "Success";
+        }catch(Exception e){
             e.printStackTrace();
         }
-        return null;
-    }
+        return "Error";
 
-    public void searchByDirector(String director){
-        try {
-            Query newQuery = em.createQuery("select director from Content where director = ?1");
-            newQuery.setParameter(1, director);
-            newQuery.executeUpdate();
-        } catch(Exception e){
-            e.printStackTrace();
-        }
     }
-
-
-    //Imprimir watch list
-    public ArrayList watchList(){
-        try {
-            Query newQuery = em.createQuery("select title, director, year, category from content");
-            newQuery.executeUpdate();
-        } catch(Exception e){
-            e.printStackTrace();
-        }
-        return null;
-    }
+    
+    
 }

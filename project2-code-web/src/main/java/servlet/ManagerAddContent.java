@@ -3,12 +3,12 @@ package servlet;
 import ejb.ManagerEJBRemote;
 import dto.EpisodeDTO;
 import dto.ContentDTO;
+import javax.ejb.EJB;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -46,11 +46,20 @@ public class ManagerAddContent extends HttpServlet {
         if(option == 1)
             contentDto = new ContentDTO(title, director, year, category, null);
         else {
-            List<EpisodeDTO> episodes = null;
+            List<EpisodeDTO> episodes = new ArrayList<EpisodeDTO>();
             episodes.add(new EpisodeDTO(0, "exmaple"));
             contentDto = new ContentDTO(title, director, year, category, episodes);
 
         }
-        managerejb.addContent(contentDto, option);
+        String result = managerejb.addContent(contentDto, option);
+        if(result.equals("Success")){
+            response.sendRedirect(request.getContextPath()+"/managerMenu.jsp");
+            session.setAttribute("error", result);
+        }
+        else{
+            response.sendRedirect(request.getContextPath()+"/managerAddContent.jsp");
+            session.setAttribute("error", result);
+            System.out.println("Error creating new content");
+        }
     }
 }

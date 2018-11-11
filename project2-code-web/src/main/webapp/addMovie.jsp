@@ -23,14 +23,25 @@
                 <h3 class="register-heading">Insert here name</h3>
                 <div class="row register-form">
                     <div class="col-md-6">
-                        <form class="form-signing" action="addMovie" method="post">
-                            <div class="input-group mb-3">
-                              <input type="text" class="form-control" placeholder="Content's name" aria-label="Content's name" aria-describedby="basic-addon2">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Ok</button>
-                              </div>
+                        <div class="row register-form">
+                            <div class="col-md-10">
+                            <div class="tab-pane fade show" id="add_movie" role="tabpanel" aria-labelledby="add_movie">
+                                <form class="form-signing" action="addMovie" method="post">
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control" name="title" placeholder="Content's name" aria-label="Content's name" aria-describedby="basic-addon2">
+                                      <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button">Ok</button>
+                                      </div>
+                                    </div>
+                                </form>
+                                <c:if test="${error.length()>0}">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        ${error}
+                                </div>
+                                </c:if>
                             </div>
-                        </form>
+                            </div>
+                        </div>
                     </div>
                  </div>
             </div>

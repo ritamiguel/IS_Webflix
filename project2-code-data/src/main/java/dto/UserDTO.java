@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Entity implementation class for Entity: User
  *
  */
-public class UserDTO {
+public class UserDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

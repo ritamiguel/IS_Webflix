@@ -14,13 +14,13 @@
         
         
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-        <dependent-module archiveName="project2-code-web-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/IS/project2-code-web/0.0.1-SNAPSHOT/project2-code-web-0.0.1-SNAPSHOT.war">
+        <dependent-module archiveName="project2-code-web-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/projeto2-code-web/projeto2-code-web">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="project2-code-business-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/IS/project2-code-business/0.0.1-SNAPSHOT/project2-code-business-0.0.1-SNAPSHOT.jar">
+        <dependent-module archiveName="project2-code-business-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/projeto2-code-business/projeto2-code-business">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="project2-code-data-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/IS/project2-code-data/0.0.1-SNAPSHOT/project2-code-data-0.0.1-SNAPSHOT.jar">
+        <dependent-module archiveName="project2-code-data-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/projeto2-code-data/projeto2-code-data">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="jaxb-api-2.3.0.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar">

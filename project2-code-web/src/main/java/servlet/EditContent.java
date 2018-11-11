@@ -33,13 +33,20 @@ public class EditContent extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String newAttribute = request.getParameter("newAttribute");
-        String option = (String) request.getParameter("option");
-        String title = (String) request.getParameter("title");
+        String title = request.getParameter("title");
+        int option = Integer.parseInt(request.getParameter("option"));
 
         String result = managerejb.updateContent(option, newAttribute, title);
 
-        if(result.equals("Success"))
-            response.sendRedirect(request.getContextPath() + "/home.jsp");
+        if(result.equals("Success")){
+            response.sendRedirect(request.getContextPath()+"/managerMenu.jsp");
+            session.setAttribute("error", result);
+        }
+        else{
+            response.sendRedirect(request.getContextPath()+"/editContent.jsp");
+            session.setAttribute("error", result);
+            System.out.println("Error editing content");
+        }
     }
 
 }

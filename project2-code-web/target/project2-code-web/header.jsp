@@ -16,6 +16,11 @@
 
 
 <style>
+	.yolo {
+		padding: 30px;
+		border: 1px;
+	}
+	
    .register {
         background: -webkit-linear-gradient(left, #2c3e50, #bdc3c7);
         margin-top: 3%;

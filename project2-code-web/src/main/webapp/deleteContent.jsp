@@ -20,24 +20,21 @@
               <div class="col-md-9 register-right">
                     <div class="row register-form">
                         <div class="col-md-10">
+                        <p>${error}</p>
                         <form method="post" action="deleteContent">
-                                <div class="input-group mb-3">
-                                  <select class="custom-select" id="inputGroupSelect02">
-                                    <option selected>Choose...</option>
-                                    <option value="1">Movie</option>
-                                    <option value="2">TVShow</option>
-                                  </select>
-                                  <div class="input-group-append">
-                                    <label class="input-group-text" for="inputGroupSelect02">Content</label>
-                                  </div>
-                                </div>
+                               
                             <div class="input-group mb-3">
-                                  <input type="text" class="form-control" placeholder="Content's title" aria-label="Content's title" aria-describedby="basic-addon2">
+                                  <input type="text" class="form-control" placeholder="content" name="content" aria-label="content" aria-describedby="basic-addon2">
                                   <div class="input-group-append">
-                                  <button class="btn btn-lg btn-primary btn-block" type="submit"> Delete content</button>
+                                  <button class="btn btn-lg btn-primary btn-block" type="submit">Delete content</button>
                                   </div>
                                 </div>
                           </form>
+                           <c:if test="${error.length()>0}">
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            ${error}
+                                    </div>
+                                </c:if>
                          </div>
                     </div>
                </div>

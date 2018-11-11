@@ -1,7 +1,9 @@
 servlet\SearchAllContent.class
 servlet\ManagerAddContent.class
 servlet\UserWatchList.class
+servlet\searchContents.class
 servlet\EditContent.class
+servlet\DeleteAccount.class
 servlet\EditUser.class
 servlet\Login.class
 servlet\Register.class
@@ -12,4 +14,5 @@ servlet\SearchByYears.class
 servlet\DeleteContent.class
 servlet\LoginFilter.class
 servlet\Logout.class
+servlet\Suggested.class
 servlet\RemoveAccount.class

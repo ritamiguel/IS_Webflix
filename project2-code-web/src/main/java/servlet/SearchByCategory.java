@@ -1,6 +1,7 @@
 package servlet;
 
 import dto.ContentDTO;
+import ejb.ManagerEJBRemote;
 import ejb.UserEJBRemote;
 
 import java.io.IOException;
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SearchByCategory extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private UserEJBRemote userejb;
+    private ManagerEJBRemote userejb;
 
     /**
      * @see HttpServlet#HttpServlet()

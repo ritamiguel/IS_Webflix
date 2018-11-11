@@ -22,9 +22,11 @@ public class User implements Serializable {
 	private int creditcard;
 	private int isManager;
 
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    //@JoinTable(name = "Content_user",
+    //        joinColumns=@JoinColumn(name="USER_ID", referencedColumnName="id"),
+    //        inverseJoinColumns=@JoinColumn(name="POST_ID", referencedColumnName="id"))
 	private List<Content> watchlist;
-
 
 	public User(String firstName, String lastName, String email, String password, int creditcard, int isManager) {
 		this.firstName = firstName;

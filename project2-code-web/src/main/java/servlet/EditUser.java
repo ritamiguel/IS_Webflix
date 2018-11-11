@@ -34,7 +34,7 @@ public class EditUser extends HttpServlet {
         HttpSession session = request.getSession();
         String newAttribute = request.getParameter("newAttribute");
         String option = (String) request.getParameter("option");
-        long id = Long.parseLong( (String) session.getAttribute("id") );
+        long id = (long) session.getAttribute("id");
         String result = authEJB.updateUser(option, newAttribute, id);
 
         if(result.equals("Success"))

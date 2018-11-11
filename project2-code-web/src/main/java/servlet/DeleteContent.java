@@ -36,10 +36,15 @@ public class DeleteContent extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String id = request.getParameter("id");
-        managerejb.deleteContent(contentdto);
+        String title = request.getParameter("content");
+        String respond = managerejb.deleteContent(title);
 
-        response.sendRedirect(request.getContextPath() + "/managerMenu.jsp");
+        if(respond.equals("Success"))
+        	response.sendRedirect(request.getContextPath() + "/managerMenu.jsp");
+        else {
+        	session.setAttribute("error", "Could not find movie/serie");
+        	response.sendRedirect(request.getContextPath() + "/deleteContent.jsp");
+        }
     }
 
 }

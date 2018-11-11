@@ -20,13 +20,12 @@
                 </a>
             </div>
             <div class="col-md-9 register-right">
-                <h3 class="register-heading">Insert here name</h3>
+                <h3 class="register-heading">Add Content</h3>
                 <div class="row register-form">
                     <div class="col-md-6">
                             <form class="form-signing" action="addContent" method="post">
                                     <div class="form-group">
                                     <select class="custom-select" id="option" name="option">
-                                        <option selected>Choose...</option>
                                          <option value="1">Movie</option>
                                          <option value="2">Serie</option>
                                          </select>

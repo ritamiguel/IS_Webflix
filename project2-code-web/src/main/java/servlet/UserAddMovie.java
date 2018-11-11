@@ -1,11 +1,13 @@
 package servlet;
 
+import data.User;
 import dto.EpisodeDTO;
 import ejb.UserEJBRemote;
 import dto.UserDTO;
 import dto.ContentDTO;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -32,36 +34,26 @@ public class UserAddMovie extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        request.getSession().removeAttribute("log");
-        if(request.getSession().getAttribute("user")==null) {
-            if (action.compareToIgnoreCase("newMovie") == 0) {
-                request.getRequestDispatcher("addMovie.jsp").forward(request, response);
-            } else{
-                request.getRequestDispatcher("userMenu.jsp").forward(request,response);
-            }
-        }
+
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String title = (String) request.getParameter("title");
-        String director = (String) request.getParameter("director");
-        int year = Integer.parseInt(request.getParameter("year"));
-        String category = (String) request.getParameter("category");
-        int option = Integer.parseInt(request.getParameter("option"));
 
-        ContentDTO contentDto = null;
-        if(option == 1)
-            contentDto = new ContentDTO(title, director, year, category, null);
-        else {
-            List<EpisodeDTO> episodes = null;
-            episodes.add(new EpisodeDTO(0, "exmaple"));
-            contentDto = new ContentDTO(title, director, year, category, episodes);
+        User iamuser = (User)session.getAttribute("user");
+        long id = iamuser.getId();
 
+        String result = userejb.addMovie(title, id);
+
+        if(result.equals("Success")){
+            response.sendRedirect(request.getContextPath()+"/userMenu.jsp");
+            session.setAttribute("error", result);
         }
-        UserDTO userDto = new UserDTO();
-        userejb.addMovie(contentDto, userDto);
+        else{
+            response.sendRedirect(request.getContextPath()+"/addMovie.jsp");
+            session.setAttribute("error", result);
+        }
     }
 
 

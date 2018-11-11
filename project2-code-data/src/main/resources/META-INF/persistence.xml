@@ -9,8 +9,6 @@
 		<jta-data-source>java:/Webflix</jta-data-source>
 		<class>data.User</class>
 		<class>data.Content</class>
-		<class>data.Movie</class>
-		<class>data.TVShow</class>
 		<class>data.Episode</class>
 		<properties>
 		<property name="javax.persistence.jdbc.user" value="root" />

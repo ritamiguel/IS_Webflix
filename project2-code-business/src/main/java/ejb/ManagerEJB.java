@@ -3,13 +3,11 @@ package ejb;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.*;
+import dto.*;
+import data.*;
+import java.util.*;
 
-import dto.ContentDTO;
-import dto.UserDTO;
-import data.Content;
-import data.User;
 
-import java.util.ArrayList;
 
 /**
  * Session Bean implementation class UserEJB
@@ -29,65 +27,176 @@ public class ManagerEJB implements ManagerEJBRemote {
     }
 
     //add content to table of contents
-    public void addContent(ContentDTO contentdto, int option) {
+    public String addContent(ContentDTO contentdto, int option) {
         try {
-            Query newQuery = em.createNativeQuery("insert into contents (title,director,year,category,id) values (?1,?2,?3,?4,?5) ");
+            Query newQuery = em.createQuery("FROM Content cont where cont.title=?1");
             newQuery.setParameter(1, contentdto.getTitle());
-            newQuery.setParameter(2, contentdto.getDirector());
-            newQuery.setParameter(3, contentdto.getYear());
-            newQuery.setParameter(4, contentdto.getCategory());
-            newQuery.setParameter(5, contentdto.getId());
-            newQuery.executeUpdate();
-        } catch(Exception e){
-            e.printStackTrace();
+            Content content = (Content) newQuery.getSingleResult();
+            if (content != null) {
+                return "Error! Content with that title already exists!";
+            }
+        }  catch (NoResultException NRE) {
+             try{
+            	 Content contentToPersist = new Content(contentdto.getTitle(), contentdto.getDirector(), contentdto.getYear(), contentdto.getCategory());
+                 em.persist(contentToPersist);
+                 return "Success";
+             } catch (Exception e) {
+                 e.printStackTrace();
+                 System.out.println("Error new content!");
+                 return "Error creating new content!";
+             }
         }
-        Content contentToPersist = new Content(contentdto.getTitle(), contentdto.getDirector(), contentdto.getYear(), contentdto.getCategory());
-        try{
-            em.persist(contentToPersist);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        
+        return "Error creating new content!";
     }
 
     //Edit the multimedia content
-    public String updateContent(String option, String newAttribute, String title){
-        System.out.println(option);
-        Content contentToUpdate = (Content) em.find(Content.class, title);
-
-        if(contentToUpdate != null) {
-            int x = 0;
-            if ("Title".equals(option)) {
-                contentToUpdate.setTitle(newAttribute);
-
-            } else if ("Director".equals(option)) {
-                contentToUpdate.setDirector(newAttribute);
-
-            } else if ("Year".equals(option)) {
-                int year = Integer.parseInt(newAttribute);
-                contentToUpdate.setYear(year);
-
-            } else if ("password".equals(option)) {
-                contentToUpdate.setCategory(newAttribute);
-
-            } else {
-                x = 1;
-
-            }
-            if (x == 0)
-                return "Success";
-        }
-        return "Error";
+    public String updateContent(int option, String newAttribute, String title){
+    	
+    	try {
+            Query newQuery = em.createQuery("FROM Content cont where cont.title=?1");
+            newQuery.setParameter(1, title);
+            Content content = (Content) newQuery.getSingleResult();
+            if (content != null) {  	
+	        	switch(option) {
+	        		case 1: content.setTitle(newAttribute); break;
+	        		case 2: content.setDirector(newAttribute); break;
+	        		case 3:	int year = Integer.parseInt(newAttribute);
+	        		content.setYear(year);
+	                	break;
+	        		case 4:content.setCategory(newAttribute); break;
+	        	}
+	          return "Success";
+	        }
+    	 }  catch (NoResultException NRE) {
+    		return "Error! Did not found movie with that title";
+    	}
+    	return "Error!";
     }
 
 
     //Delete content
-    public void deleteContent(ContentDTO contentdto){
+    public String deleteContent(String title){
         try {
-            Query newQuery = em.createQuery("delete from Contents where title = ?1");
-            newQuery.setParameter(1, contentdto.getTitle());
-            newQuery.executeUpdate();
+        	Query newQuery = em.createQuery("FROM Content cont where cont.title=?1");
+            newQuery.setParameter(1, title);
+            Content content = (Content) newQuery.getSingleResult();
+            if (content != null) { 
+            	em.remove(content);
+            	return "Success";
+            }
         } catch(Exception e) {
             e.printStackTrace();
         }
+        return "Error";
+    }
+    
+    public List<ContentDTO> searchByCategory(String category){
+        try {
+            Query newQuery = em.createQuery("from Content cont where cont.category = ?1");
+            newQuery.setParameter(1, category);
+            List<Content> result = newQuery.getResultList();
+            ArrayList<ContentDTO> resultDTO = new ArrayList<ContentDTO>();
+            for (Content content : result) {
+            	List <EpisodeDTO> episodeDTO = new ArrayList<EpisodeDTO>();
+            	for(Episode ep : content.getEpisodes()) {
+            		episodeDTO.add(new EpisodeDTO(ep.getTitle(),ep.getSinopse()));
+            	}
+            	ContentDTO contentToContentDTO = new ContentDTO(content.getTitle(), content.getDirector(), content.getYear(), content.getCategory(), episodeDTO);
+                resultDTO.add(contentToContentDTO);
+            }
+            return resultDTO;
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public List<ContentDTO> searchByDirector(String director){
+    	try {
+            Query newQuery = em.createQuery("from Content cont where cont.director = ?1");
+            newQuery.setParameter(1, director);
+            List<Content> result = newQuery.getResultList();
+            ArrayList<ContentDTO> resultDTO = new ArrayList<ContentDTO>();
+            for (Content content : result) {
+            	List <EpisodeDTO> episodeDTO = new ArrayList<EpisodeDTO>();
+            	for(Episode ep : content.getEpisodes()) {
+            		episodeDTO.add(new EpisodeDTO(ep.getTitle(),ep.getSinopse()));
+            	}
+            	ContentDTO contentToContentDTO = new ContentDTO(content.getTitle(), content.getDirector(), content.getYear(), content.getCategory(), episodeDTO);
+                resultDTO.add(contentToContentDTO);
+            }
+            return resultDTO;
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+    public List<ContentDTO> searchByYear(String yearstr){
+    	int year = Integer.parseInt(yearstr);
+    	try {
+            Query newQuery = em.createQuery("from Content cont where cont.year = ?1");
+            newQuery.setParameter(1, year);
+            List<Content> result = newQuery.getResultList();
+            ArrayList<ContentDTO> resultDTO = new ArrayList<ContentDTO>();
+            for (Content content : result) {
+            	List <EpisodeDTO> episodeDTO = new ArrayList<EpisodeDTO>();
+            	for(Episode ep : content.getEpisodes()) {
+            		episodeDTO.add(new EpisodeDTO(ep.getTitle(),ep.getSinopse()));
+            	}
+            	ContentDTO contentToContentDTO = new ContentDTO(content.getTitle(), content.getDirector(), content.getYear(), content.getCategory(), episodeDTO);
+                resultDTO.add(contentToContentDTO);
+            }
+            return resultDTO;
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+    public List<ContentDTO> searchByTitle(String title){
+    	try {
+            Query newQuery = em.createQuery("from Content cont where cont.title = ?1");
+            newQuery.setParameter(1, title);
+            List<Content> result = newQuery.getResultList(); 
+            ArrayList<ContentDTO> resultDTO = new ArrayList<ContentDTO>();
+            
+            for (Content content : result) {
+            	List <EpisodeDTO> episodeDTO = new ArrayList<EpisodeDTO>();
+            	for(Episode ep : content.getEpisodes()) {
+            		episodeDTO.add(new EpisodeDTO(ep.getTitle(),ep.getSinopse()));
+            	}
+            	ContentDTO contentToContentDTO = new ContentDTO(content.getTitle(), content.getDirector(), content.getYear(), content.getCategory(), episodeDTO);
+                resultDTO.add(contentToContentDTO);
+            }
+            return resultDTO;
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+  
+    public List<ContentDTO> getAllContent(){
+    	try {
+            Query newQuery = em.createQuery("from Content");
+            List<Content> result = newQuery.getResultList();
+            ArrayList<ContentDTO> resultDTO = new ArrayList<ContentDTO>();
+            for (Content content : result) {
+            	List <EpisodeDTO> episodeDTO = new ArrayList<EpisodeDTO>();
+            	for(Episode ep : content.getEpisodes()) {
+            		episodeDTO.add(new EpisodeDTO(ep.getTitle(),ep.getSinopse()));
+            	}
+            	ContentDTO contentToContentDTO = new ContentDTO(content.getTitle(), content.getDirector(), content.getYear(), content.getCategory(), episodeDTO);
+                resultDTO.add(contentToContentDTO);
+            }
+            return resultDTO;
+        } catch (NoResultException nre) {
+ 
+            return null;
+        } 
     }
 }
+
+
